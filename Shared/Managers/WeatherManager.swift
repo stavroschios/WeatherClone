@@ -12,7 +12,7 @@ class WeatherManager {
     func getCurrentWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees) async throws -> ResponseBody {
         // Replace YOUR_API_KEY in the link below with your own
         guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\("TOKEN")&units=metric") else { fatalError("Missing URL") }
-//        guard let url = URL(string: "https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=\(latitude)&lon=\(longitude)&appid=\("8c29b15d28295d2ef4ad0627dc050ddf")&units=metric") else { fatalError("Missing URL") }
+//        guard let url = URL(string: "https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=\(latitude)&lon=\(longitude)&appid=\("TOKEN")&units=metric") else { fatalError("Missing URL") }
 
 
         let urlRequest = URLRequest(url: url)
